@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Create Account</title>
+</head>
+<body>
+    <main>
+    <h1>HEY</h1>
+    <h2>welcome to the site</h2>
+    <h3>the messaging site</h3>
+    <hr>
+    <%- include('./partials/breadcrumb')%>
+    <h1>Create Account Here</h1>
+
+        <form action="/createUser" method="POST">
+            username: <input type="text" name="username"> <br>
+            password: <input type="text" name="password"> <br>
+            <button>Sign Up</button>
+        </form>
+    </main>     
+</body>
+</html>

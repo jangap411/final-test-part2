@@ -1,0 +1,204 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+}
+
+body{
+  font-family:'Segoe UI',sans-serif, Tahoma, Geneva, Verdana;
+  /* background: #ECE9E6;  fallback for old browsers */
+  /* background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(to right, #FFFFFF, #ECE9E6); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-size: 13px;
+  background: #FFFFFF;
+}
+
+h1{
+  font-weight: 500;
+}
+
+.home-title{
+  border-bottom:1px solid #ccc;
+  padding:10px;
+}
+
+main{
+  display:flex;
+  width:100%;
+}
+
+/*--------- left column -------------*/
+.left-col{
+  height: 100%;
+  flex: 2;
+  padding: 2%;
+  width:30%;
+  /* align-items: center; */
+  /* justify-content: space-around; */
+  /* position:sticky; */
+  /* border: 1px solid #ccc; */
+  /* border-radius: 5%; */
+}
+.left-col button{
+  width:100%;
+}
+
+.nav-items{
+  margin: 15px;
+  font-weight: lighter;
+  cursor: pointer;
+  
+}
+.nav-items h2{
+  font-size: 18px;
+  color:black;
+  font-weight: lighter;
+}
+
+
+.active{
+  color: #06def1;
+}
+
+/* ---------------------- middle colum ---------------------- */
+.middle-col{
+  flex: 4;
+  border: 1px solid #ccc;
+  width:40%;
+  height:100%;
+  border-top: none;
+  background: #ECE9E6;
+}
+
+.create-tweet{
+  top: 0;
+  margin-bottom:20px;
+  box-shadow: 0px 0px 2px #ccc;
+  background-color:#FFFFFF;
+}
+.post-item{
+  display:flex;
+  width:100%;
+}
+
+form{
+  width: 100%;
+  padding:10px;
+}
+
+.avatar{
+  vertical-align: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.img-avatar{
+  align-items: center;
+  padding: 5px;
+}
+
+button{
+  color: #fbfcfd;
+  padding: 10px 25px;
+  background:#06def1;
+  border: 1px solid #FFF;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+}
+#like-btn{
+  color: #fbfcfd;
+  padding: 5px 10px;
+  background: #fbfcfd;
+  border: 1px solid #FFF;
+  border-radius: 50px;
+  outline: none;
+  cursor: pointer;
+}
+
+.create-tweet input[type=text]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  border-radius:2%;
+  box-sizing: border-box;
+  height: 50%;
+}
+
+.create-tweet input[type=text]:focus{
+  border-bottom: 1px solid #ccc;;
+}
+
+.tweet-content{
+  padding:15px;
+  border: 1px solid #ccc;
+  background-color:#FFFFFF;
+  width:100%;
+  display: flex;
+}
+
+.tweet-content p{
+  padding: 3px;
+  font-family: sans-serif;
+}
+
+/* ------------ right column ---------------------*/
+.right-col{
+  flex: 2;
+  /* border: 1px solid #ccc; */
+  padding: 2%;
+  width:30%;
+  border-radius: 5%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.right-col input[type=text]{
+  width: 100%;
+  color: black;
+  padding: 8px 25px;
+  background:#dde0e0;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+}
+.trending{
+  color:#8d8b8b;
+  font-weight:lighter;
+  font-size:13px;
+}
+.right-side h2{
+  font-size:14;
+  width:100%;
+  border-bottom: 1px solid #ccc;
+  margin:5px;
+  padding: 3px;
+}
+.right-side{
+  margin: 10px;
+  background-color:#f5f5f5;
+  width:100%;
+  padding:15px;
+  border-radius: 5%;
+}
+.trend-contents{
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.breaking-news p{
+  padding: 3px;
+}
+
+a{
+  color:#06def1;
+  text-decoration:none;
+  cursor:pointer;
+  font-size:14px;
+}
+a:hover{
+  text-decoration:underline;
+}

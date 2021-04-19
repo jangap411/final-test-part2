@@ -1,0 +1,102 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #ECE9E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+main{
+  width:50%;
+  padding:5%;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius:2%;
+  box-sizing: border-box;
+}
+
+#login-form, #signup-form{
+  padding:5%;
+}
+
+form{
+  padding:3%;
+}
+
+/* a link tag */
+a,#btnSignup{
+  color:lightseagreen;
+  text-decoration:underline;
+  cursor:pointer;
+}
+
+a:hover,#btnSignup:hover{
+  text-decoration: none;
+}
+
+/* Set a style for all buttons */
+button {
+  /* background-color: #06def1;
+  background-image: linear-gradient(to right top, #008793, #00bf72); 
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 25px;
+  border-radius:3%; */
+  padding: 14px 20px;
+  margin: 5px 0;
+  width: 100%;
+  color: #fbfcfd;
+  background:#06def1;
+  border: 1px solid #FFF;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+
+}
+
+.hideForm{
+  display: none;
+}
+.hide-login{
+  display: none;
+}
+
+.show-signup{
+  display: block;
+  animation: drop 1.5s ease;
+}
+
+.breadcrumb{
+  padding: 10px;
+  margin:5px;
+}
+
+
+/*animations*/
+@keyframes drop{
+    0%{
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
