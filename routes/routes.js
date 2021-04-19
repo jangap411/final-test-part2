@@ -78,6 +78,10 @@ router.post("/login", async function (req, res) {
       where: { username },
     });
 
+    let expireTime = new Date();
+    let minutes = 10;
+    expireTime.setTime(expireTime.getTime() + minutes * 60 * 1000);
+
     /*
     moves the if block from line 50 on the original code base into the try block.
     since the async call to the db for the user only exist with in the try block, it prevents the 
@@ -102,7 +106,7 @@ router.post("/login", async function (req, res) {
 
       */
       let token = jwt.sign(data, "theSecret", { expiresIn: "10m" });
-      res.cookie("token", token);
+      res.cookie("token", token, { expires: expireTime });
       dataMsg.msg = "";
       res.redirect("/");
     } else {
