@@ -20,6 +20,7 @@ Message.init(
   {
     content: DataTypes.STRING,
     time: DataTypes.TIME,
+    //adds the likes column to be stored in the db and set the default value to 0
     likes: {
       type: DataTypes.INTEGER,
       defaultValue: 0,
